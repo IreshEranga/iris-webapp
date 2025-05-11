@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Iris Flower Prediction</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+</head>
+<body class="container mt-5">
+    <h2 class="mb-4">Iris Flower Species Predictor</h2>
+    <form action="/predict" method="post" class="row g-3">
+        <div class="col-md-3">
+            <input type="number" name="sepal_length" step="any" class="form-control" placeholder="Sepal Length (cm)" required>
+        </div>
+        <div class="col-md-3">
+            <input type="number" name="sepal_width" step="any" class="form-control" placeholder="Sepal Width (cm)" required>
+        </div>
+        <div class="col-md-3">
+            <input type="number" name="petal_length" step="any" class="form-control" placeholder="Petal Length (cm)" required>
+        </div>
+        <div class="col-md-3">
+            <input type="number" name="petal_width" step="any" class="form-control" placeholder="Petal Width (cm)" required>
+        </div>
+        <div class="col-12">
+            <button type="submit" class="btn btn-primary">Predict</button>
+        </div>
+    </form>
+
+    {% if prediction_text %}
+        <div class="alert alert-success mt-4" role="alert">
+            {{ prediction_text }}
+        </div>
+    {% endif %}
+</body>
+</html>
