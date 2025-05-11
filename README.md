@@ -94,15 +94,6 @@ This project helps you learn:
 
 ---
 
-## 🌐 Deployment (Optional)
-
-Deploy easily with services like:
-- **Render.com**
-- **PythonAnywhere**
-- **Heroku (deprecated free tier)**
-
----
-
 ## 🤝 Contributing
 
 Feel free to fork this project, suggest improvements, or add new features. Contributions are welcome!
