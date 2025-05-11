@@ -22,11 +22,8 @@ iris-webapp/
 │   └── iris_model.pkl          # Trained ML model
 ├── templates/
 │   └── index.html              # Frontend HTML
-├── static/
-│   └── style.css               # Custom styles (optional)
 ├── app.py                      # Flask web application
 ├── train_model.py              # Script to train the ML model
-├
 └── README.md                   
 ```
 
